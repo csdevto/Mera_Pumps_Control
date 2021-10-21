@@ -46,7 +46,7 @@ try:
 	loop = asyncio.get_event_loop()
 	asyncio.ensure_future(RunPump(PumpsIn,PinON,OFF))
 	asyncio.ensure_future(RunPump(PumpsOut,PoutON,OFF))
-	asyncio.ensure_future(TempHum())
+#	asyncio.ensure_future(TempHum())
 	loop.run_forever()
 except:
 	logging.warning("Catch All")
